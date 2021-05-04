@@ -4,7 +4,6 @@ import { createStore, Store } from 'vuex'
 declare class State {
   count: number
 }
-export const key: InjectionKey<Store<State>> = Symbol()
 
 // Create a new store instance.
 export default createStore({
