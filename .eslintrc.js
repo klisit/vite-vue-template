@@ -3,6 +3,8 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
+    mocha: true,
+    'cypress/globals': true,
   },
   extends: ['plugin:vue/essential', '@vue/prettier', 'plugin:prettier/recommended', 'plugin:jest/recommended'],
   parserOptions: {
@@ -10,9 +12,10 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ['vue', '@typescript-eslint', 'cypress'],
   rules: {
     //vue3允许使用template里多个根节点(https://v3.vuejs.org/guide/migration/fragments.html#_3-x-syntax)
     'vue/no-multiple-template-root': 0,
+    strict: 'off',
   },
 }
