@@ -16,6 +16,5 @@ module.exports = {
   rules: {
     //vue3允许使用template里多个根节点(https://v3.vuejs.org/guide/migration/fragments.html#_3-x-syntax)
     'vue/no-multiple-template-root': 0,
-    strict: 'off',
   },
 }

@@ -9,7 +9,8 @@
     "lint:js": "eslint --ext .ts,.js,.vue",
     "prepare": "husky install",
     "test:unit": "jest",
-    "test:e2e": "cypress open"
+    "test:e2e": "cypress open",
+    "v": "node bin/version.ts"
   },
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
