@@ -3,13 +3,13 @@ import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 import { exec } from 'child_process'
 
-export function version(oldVer) {
+export function version(oldVer: string) {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   })
   return new Promise((resolve, reject) => {
-    rl.question(`当前版本为${oldVer},请输入新版本(不填默认当前版本) \n`, (ver) => {
+    rl.question(`当前版本为${oldVer},请输入新版本(不填默认当前版本) \n`, (ver: string) => {
       let chip = ver.split('.')
       if (ver == '') {
         logo(oldVer)
