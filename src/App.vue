@@ -4,6 +4,7 @@
     ｜
     <router-link to="/about">关于</router-link>
   </p>
+  <el-button>按钮</el-button>
   <router-view></router-view>
 </template>
 

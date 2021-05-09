@@ -12,5 +12,5 @@
     "types": ["vite/client", "jest", "node"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["tests"]
+  "exclude": ["tests", "node_modules"]
 }
