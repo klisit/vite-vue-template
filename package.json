@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && yarn archive",
-    "build-tsc": "vue-tsc --noEmit && vite build && yarn archive",
+    "build:tsc": "vue-tsc --noEmit --skipLibCheck && vite build && yarn archive",
     "serve": "vite preview",
     "fix:js": "eslint --ext .js,.vue --fix",
     "lint:js": "eslint --ext .ts,.js,.vue",
