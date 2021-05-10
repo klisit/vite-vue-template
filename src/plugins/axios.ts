@@ -1,10 +1,3 @@
-/*
- * @Description: string
- * @Author: klisit
- * @Date: 2021-04-18 23:37:15
- * @LastEditTime: 2021-04-19 09:42:09
- * @LastEditors: klisit
- */
 'use strict'
 
 import axios from 'axios'

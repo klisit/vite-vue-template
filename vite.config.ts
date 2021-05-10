@@ -10,8 +10,6 @@ import { version } from './bin/version'
 // https://vitejs.dev/config/
 export default async ({ command, mode }) => {
   if (command == 'build') {
-    console.log(mode)
-
     let env = loadEnv(mode, process.cwd())
     await version(env.VITE_APP_VERSION)
   }
