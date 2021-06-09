@@ -1,7 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router/index'
+import router, { setupLayout } from './router/index'
 import store from './store/index'
+import setupElement from './plugins/element'
 import 'normalize.css/normalize.css'
 
-createApp(App).use(store).use(router).mount('#app')
+let app = createApp(App).use(store).use(router)
+setupElement(app)
+setupLayout(app)
+app.mount('#app')
