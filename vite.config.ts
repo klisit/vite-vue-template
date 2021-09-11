@@ -54,6 +54,7 @@ export default async ({ command, mode }) => {
       //     rewrite: (path) => path.replace('/api/', '/')
       //   }
       // }
+      //`
     },
   })
 }
